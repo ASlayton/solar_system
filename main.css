@@ -1,23 +1,43 @@
+/* font-family: 'Rock Salt', cursive; */
+/* font-family: 'Fascinate Inline', cursive; */
+/* font-family: 'IBM Plex Mono', monospace; */
+
 body {
   background-color: black;
   color: yellow;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#page-header {
+  font-family: 'Fascinate Inline', cursive;
+  text-align: center;
+  font-size: 3em;
 }
 
 #insert-planet-cards-here {
+  width: 100%;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .planet-card {
   justify-content: space-around;
   margin: 10px;
-  background-color: steelblue;
-  width: 250px; 
+  background-image: url(https://ih0.redbubble.net/image.257337532.9328/flat,800x800,075,f.u1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
   height: 300px;
   border: 2px solid white;
 }
 
 .planet-card > h1 {
+  font-family: 'Rock Salt', cursive;
+  color: navy;
+  width: 60%;
+  margin-left: 20%;
   margin-top: 125px;
   text-align: center;
 }
@@ -30,8 +50,7 @@ body {
 /* Info Card Styling */
 .info-card {
   background-color: steelblue;
-  width: 80%;
-  margin-left: 10%;
+  width: 40%;
   border: 2px solid white;
 }
 
@@ -43,7 +62,10 @@ body {
 .info-card > h1 {
   font-size: 2.5em;
   text-align: center;
-  clear: right;
+}
+
+.info-card > h1#BigRedX:hover {
+  color: 	#830303;
 }
 
 .info-card > p {
