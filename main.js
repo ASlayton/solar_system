@@ -8,7 +8,7 @@ const writeToDom = (myInnerds, myElement) => {
 };
 
 //Put a mouseover event listener on card
-const initHoverListener = (myDataArray) => {
+const initHoverListener = () => {
   const planetCards = document.getElementsByClassName("planet-card");
   for(let n = 0; n < planetCards.length; n++){
     planetCards[n].addEventListener("mouseover", turnCardOver);
@@ -49,12 +49,22 @@ const displayInfoCard = (e) => {
       myInfoCardString += `<p>Largest Moon: ${myData[m].nameOfLargestMoon}</p>`;
       myInfoCardString += `</div>`;
     };
-    clearAllCards();
-    writeToDom(myInfoCardString, 'insert-planet-cards-here');
   };
+  clearAllCards();
+  writeToDom(myInfoCardString, 'insert-planet-cards-here');
+  initBigRedX();  
+};
 
+const initBigRedX = (e) => {
+  let myBigRedX = document.getElementById("BigRedX");
+  console.log(myBigRedX);
+  myBigRedX.addEventListener("click", restorePage);
+};
 
-  
+const restorePage = () => {
+  clearAllCards();
+  createPlanetCards(myData);
+  initHoverListener();
 };
 
 const clearAllCards = () => {
