@@ -13,6 +13,7 @@ const initHoverListener = (myDataArray) => {
   for(let n = 0; n < planetCards.length; n++){
     planetCards[n].addEventListener("mouseover", turnCardOver);
     planetCards[n].addEventListener("mouseleave", turnCardBackOver);
+    planetCards[n].addEventListener("click", displayInfoCard);
   };
 };
 
@@ -34,6 +35,14 @@ const turnCardBackOver = (e) => {
     console.log(myCurrentCard); 
     myElement.innerHTML = `<h1>${myData[n].name}</h1>`;   
   };
+};
+
+const displayInfoCard = (e) => {
+  clearAllCards();
+};
+
+const clearAllCards = () => {
+  console.log("Hey, I'm working here.")
 };
 
 //Function to create individual planet cards
