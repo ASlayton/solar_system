@@ -18,7 +18,7 @@
     },
     {
       "name": "Earth",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/338px-The_Earth_seen_from_Apollo_17.jpg",
+      "imageUrl": "https://img00.deviantart.net/b23d/i/2017/355/0/9/earth_chan_by_starman_jr-dbxg125.png",
       "description": "Earth is the third planet from the Sun and is the largest of the terrestrial planets. The Earth is the only planet in our solar system not to be named after a Greek or Roman deity. The Earth was formed approximately 4.54 billion years ago and is the only known planet to support life.",
       "isGasPlanet": false,
       "numberOfMoons": 1,
@@ -66,7 +66,7 @@
     },
     {
       "name": "Pluto",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg/338px-Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg",
+      "imageUrl": "http://i0.kym-cdn.com/photos/images/facebook/001/326/597/07a.jpg",
       "description": "Pluto was discovered by Clyde Tombaugh in 1930 and was originally considered to be the ninth planet from the Sun. After 1992, its status as a planet was questioned following the discovery of several objects of similar size in the Kuiper belt. In 2005, Eris, a dwarf planet in the scattered disc which is 27% more massive than Pluto, was discovered. This led the International Astronomical Union (IAU) to define the term 'planet' formally in 2006, during their 26th General Assembly. That definition excluded Pluto and reclassified it as a dwarf planet.",
       "isGasPlanet": false,
       "numberOfMoons": 5,
