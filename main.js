@@ -5,6 +5,23 @@ const writeToDom = (myInnerds, myElement) => {
   document.getElementById(myElement).innerHTML = myInnerds;
 };
 
+//Put a mouseover event listener on card
+const initHoverListener = () => {
+  const planetCards = document.getElementsByClassName("planet-card");
+  for(let n = 0; n < planetCards.length; n++){
+    planetCards[n].addEventListener("mouseenter", turnCardOver);
+    planetCards[n].addEventListener("mouseout", turnCardBackOver);
+  };
+};
+
+const turnCardOver = () => {
+  console.log("I'm flippin out man");
+};
+
+const turnCardBackOver = () => {
+  console.log("Fuck Yeah");
+};
+
 //Function to create individual planet cards
 //Front Face is Name of planet
 //Back Face is Picture of Planet
@@ -22,6 +39,7 @@ const createPlanetCards = (dataArray) => {
 function ifFileLoads(){
   const myPlanets = JSON.parse(this.responseText);
   createPlanetCards(myPlanets.planets);
+  initHoverListener();
 };
 
 //XML HTTP Request on Page Load- Error Handler
