@@ -1,4 +1,4 @@
-//console.log("Why, hello there.");
+
 //global variable
 let myData = [];
 
@@ -22,8 +22,7 @@ const turnCardOver = (e) => {
   const myCurrentCard = e.target.id;
   for(let n = 0; n < myData.length; n++)
   if(myCurrentCard === myData[n].name){
-    console.log(myCurrentCard); 
-    myElement.innerHTML = `<img src='${myData[n].imageUrl}' alt='${myData[n].name}'>`;   
+    myElement.innerHTML = `<img src='${myData[n].imageUrl}' alt='${myData[n].name}' id='${myData[n].name}'>`;   
   };
 };
 
@@ -32,17 +31,35 @@ const turnCardBackOver = (e) => {
   const myCurrentCard = e.target.id;
   for(let n = 0; n < myData.length; n++)
   if(myCurrentCard === myData[n].name){
-    console.log(myCurrentCard); 
-    myElement.innerHTML = `<h1>${myData[n].name}</h1>`;   
+    myElement.innerHTML = `<h1 id='${myData[n].name}'>${myData[n].name}</h1>`;   
   };
 };
 
 const displayInfoCard = (e) => {
-  clearAllCards();
+  myClickedCard = e.target.id;
+  let myInfoCardString = '';
+  for(var m = 0; m < myData.length; m++){
+    if(myClickedCard === myData[m].name){
+      myInfoCardString += `<div class='info-card'>`;
+      myInfoCardString += `<h1 id='BigRedX'>X</h1>`
+      myInfoCardString += `<h1>${myData[m].name}</h1>`;
+      myInfoCardString += `<img src='${myData[m].imageUrl}' alt='${myData[m].name}'>`; 
+      myInfoCardString += `<p class='info-card-paragraph'>${myData[m].description}</p>`;
+      myInfoCardString += `<p>Known Number of Moons: ${myData[m].numberOfMoons}</p>`;
+      myInfoCardString += `<p>Largest Moon: ${myData[m].nameOfLargestMoon}</p>`;
+      myInfoCardString += `</div>`;
+    };
+    clearAllCards();
+    writeToDom(myInfoCardString, 'insert-planet-cards-here');
+  };
+
+
+  
 };
 
 const clearAllCards = () => {
-  console.log("Hey, I'm working here.")
+  const myDiv = document.getElementById("insert-planet-cards-here");
+  myDiv.innerHTML = '';
 };
 
 //Function to create individual planet cards
