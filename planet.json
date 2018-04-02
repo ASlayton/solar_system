@@ -71,6 +71,14 @@
       "isGasPlanet": false,
       "numberOfMoons": 5,
       "nameOfLargestMoon":"Charon"
+    },
+    {
+      "name": "Eris",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Eris_and_dysnomia2.jpg/375px-Eris_and_dysnomia2.jpg",
+      "description": "When Eris was first discovered in 2005, it was thought to be significantly larger than Pluto. Originally, it was submitted as the tenth planet in the solar system. Ultimately, however, Eris' discovery was a big reason astronomers demoted Pluto to dwarf planet status in 2006. That decision remains controversial to this day, making Eris' name fitting.",
+      "isGasPlanet": false,
+      "numberOfMoons": 1,
+      "nameOfLargestMoon": "Dysnomia"
     }
   ]
 }

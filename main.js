@@ -15,6 +15,8 @@ const initHoverListener = () => {
     planetCards[n].addEventListener("mouseleave", turnCardBackOver);
     planetCards[n].addEventListener("click", displayInfoCard);
   };
+  const searchBar = document.getElementById("mySearch");
+  searchBar.addEventListener("click", runSearch);
 };
 
 const turnCardOver = (e) => {
@@ -60,6 +62,28 @@ const initBigRedX = (e) => {
   console.log(myBigRedX);
   myBigRedX.addEventListener("click", restorePage);
 };
+
+
+//Display Cards Based on search
+const runSearch = () => {
+  restorePage();
+  const mySearchEntry = document.getElementById("searchThis").value.toLowerCase();
+  let myCardHas;
+  for(var k = 0; k < myData.length; k++){
+    myCardHas = false;
+    if(myData[k].name.toLowerCase().includes(mySearchEntry)){
+      myCardHas = true;
+    }else if (myData[k].description.toLowerCase().includes(mySearchEntry)){
+      myCardHas = true;
+    }else if(myData[k].nameOfLargestMoon.toLowerCase().includes(mySearchEntry)){
+      myCardHas = true;
+    };
+    if (myCardHas === false){
+      document.getElementById(myData[k].name).style.display = 'none';
+    };
+  };
+};
+
 
 const restorePage = () => {
   clearAllCards();
