@@ -6,9 +6,12 @@
 An interactive app with information cards detailing the planets of our solar system
 
 **Screenshots**
-![Solar System Screenshot 1](https://github.com/ASlayton/solar_system/blob/master/screenshots/screencapture-localhost-8080-2018-04-03-16_27_46.png)
-![Solar System Screenshot_2](https://github.com/ASlayton/solar_system/blob/master/screenshots/screencapture-localhost-8080-2018-04-03-16_27_03.png)
 ![Solar System Screenshot_3](https://github.com/ASlayton/solar_system/blob/master/screenshots/screencapture-localhost-8080-2018-04-03-16_20_13.png)
+
+![Solar System Screenshot_2](https://github.com/ASlayton/solar_system/blob/master/screenshots/screencapture-localhost-8080-2018-04-03-16_27_03.png)
+
+![Solar System Screenshot 1](https://github.com/ASlayton/solar_system/blob/master/screenshots/screencapture-localhost-8080-2018-04-03-16_27_46.png)
+
 
 **Instructions**
 1. Clone repo to local machine.
@@ -19,6 +22,8 @@ An interactive app with information cards detailing the planets of our solar sys
 
 **Contributors**
 [Mary Alice Orr](https://github.com/maryaliceorr)
+
 [Michael Clark](https://github.com/michaelclark2)
+
 [Maken Hubbard](https://github.com/MakenHubbarde)
 
